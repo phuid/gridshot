@@ -1,0 +1,209 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    background-color: #2B87D1;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: -1;
+    position: fixed;
+}
+
+#fullscreenDiv {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    transition: background-color 5s;
+}
+#endscreen {
+    position: fixed;
+    text-align: center;
+    top: 30px;
+    right: 0;
+    width: 300px;
+    display: block;
+    font-size: 20px;
+    z-index: 5;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 25px;
+    transition: top 2s ;
+    transition: right 2s;
+    transition: width 2s;
+    transition: height 2s;
+    transition: font-size 2s;
+}
+#endbutton {
+    position: absolute;
+    top: 47%;
+    left: 35%;
+} 
+
+#endEarlyBtn {
+    position: absolute;
+    top: 145.4px;
+}
+table, th, td {
+    border-collapse: collapse;
+    z-index: 1; 
+}
+#rangeContainer {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#range {
+    display: inline-block;
+    z-index: -1;
+    top: 0;
+    position: relative;
+    width: 100%;
+}
+
+@media (max-aspect-ratio: 1) {
+    #range {
+        padding-top: 100%;
+        top: 25%;
+    }
+}
+
+@media (min-aspect-ratio: 1) {
+    #fixeddimensions {height: 100vh;}
+    #range {height: 100vh;}
+    
+    tr {height: 16.6667vh;}
+    th {
+        width: 9.375%;
+        height: 16.6667vh;
+        position: fixed;
+    }
+    .A {top: 0;}
+    .B {top: 16.6667%;}
+    .C {top: 33.3333%;}
+    .D {top: 50%;}
+    .E {top: 66.6667%;}
+    .F {top: 83.3333%;}
+    .one {left: 21.875%;}
+    .two {left: 31.25%;}
+    .three {left: 40.625%;}
+    .four {left: 50%;}
+    .five {left: 59.375%;}
+    .six {left: 68.75%;}
+    }
+
+#fixeddimensions {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#CountdownDiv {
+    Position: fixed;
+    top: 3px;
+    width: 100%;
+    z-index: 4;
+    pointer-events: none;
+}
+#Countdown {
+    width: 100%;
+    margin: 5px;
+    background-color: #2B87D1;
+    pointer-events: none;
+    border: none;
+}
+#CountdownText {
+    display: none;
+    text-align: center;
+    font-size: 40px;
+    color: #FFCC00;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: "Lucida Console", "Courier New", monospace;
+    pointer-events: none;
+}
+
+.button {
+    position: fixed;
+    width: 100px;
+    top: 25px;
+    left: 0;
+    background-color: rgba(200,200,255,0.7);        
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px; 
+    z-index: 3;
+    //#FFCC00
+}
+
+.rounded {border-radius: 12px;}
+.round {
+    width: 100%;
+    height: 16.6667vh;
+    border-radius: 100%;    
+}                    
+ 
+.target {
+    position: relative;
+    box-shadow:
+        0 0 0 15px red inset,
+        0 0 0 30px white inset,
+        0 0 0 45px red inset,
+        0 0 0 60px white inset,
+        0 0 0 75px red inset;
+    display: none;
+    border: none;
+    z-index: 2;
+} 
+
+       
+#startButton {
+    width: 140px;
+    top: 46%;
+    left: 47%;
+    z-index: 9;
+}
+#restartButton {
+    top: 47%;
+    left: 55%;
+    display: none; 
+}
+
+#centerDiv {
+    top: 50%;
+    left: 50vw;
+    display: none;
+    z-index: 9;
+}
+
+#centerspan {
+    margin: 30px;    
+}
+
+.center {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    color: black;
+    background-color: #FFCC00;
+    border-radius: 100%;
+    font-size: 80px;
+    margin-left: -50px;
+    margin-top: -30px;
+}

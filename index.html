@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+	<title>Gridshot</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+</head>                                                          
+<body>
+    <div id="fullscreenDiv"></div>
+    <div id="stats"></div>
+    <div class="center" id="centerDiv"><span id="centerspan"></span></div>
+    <div id="endscreen">
+        <span id="endtotal"></span><br><span id="endtime"></span><br><span id="thistime"></span>
+    </div>
+    <div id="CountdownDiv">
+        <progress value="60" max="60" id="Countdown"></progress> <p id="CountdownText"> <span>60 </span> </p>
+    </div>
+
+<button class="button round" id="startButton" onclick="Start()">start</button> <br>
+<button class="button rounded" id="fs" onclick="fullscreen()">fullscreen</button><br>   
+<button class="button rounded" id="restartButton" onClick="restart()">restart</button>
+<button class="button rounded" id="endEarlyBtn" onClick="stats()">stats</button>      
+<div id="rangeContainer">
+<div id="range" class="squared">
+<table id="fixeddimensions">
+<tbody>
+   <tr> <th class="A one"><button class="round target" id="0" onclick="Hit(this.id)"></button> </th><th class="A two" ><button class="round target" id="1" onclick="Hit(this.id)"></button> </th><th class="A three" ><button class="round target" id="2" onclick="Hit(this.id)"></button> </th><th class="A four"><button class="round target" id="3" onclick="Hit(this.id)"></button> </th><th class="A five"><button class="round target" id="4" onclick="Hit(this.id)"></button> </th><th class="A six"><button class="round target" id="5" onclick="Hit(this.id)"></button> </th>
+   <tr> <th class="B one"><button class="round target" id="6" onclick="Hit(this.id)"></button> </th><th class="B two" ><button class="round target" id="7" onclick="Hit(this.id)"></button> </th><th class="B three" ><button class="round target" id="8" onclick="Hit(this.id)"></button> </th><th class="B four" id="Bfour"><button class="round target" id="9" onclick="Hit(this.id)"></button> </th><th class="B five" id="Bfive"><button class="round target" id="10" onclick="Hit(this.id)"></button> </th><th class="B six" id="Bsix"><button class="round target" id="11" onclick="Hit(this.id)"></button> </th>
+   <tr> <th class="C one"><button class="round target" id="12" onclick="Hit(this.id)"></button> </th><th class="C two" ><button class="round target" id="13" onclick="Hit(this.id)"></button> </th><th class="C three" ><button class="round target" id="14" onclick="Hit(this.id)"></button> </th><th class="C four" id="Cfour"><button class="round target" id="15" onclick="Hit(this.id)"></button> </th><th class="C five" id="Cfive"><button class="round target" id="16" onclick="Hit(this.id)"></button> </th><th class="C six" id="Csix"><button class="round target" id="17" onclick="Hit(this.id)"></button> </th>
+   <tr> <th class="D one"><button class="round target" id="18" onclick="Hit(this.id)"></button> </th><th class="D two" ><button class="round target" id="19" onclick="Hit(this.id)"></button> </th><th class="D three" ><button class="round target" id="20" onclick="Hit(this.id)"></button> </th><th class="D four" id="Dfour"><button class="round target" id="21" onclick="Hit(this.id)"></button> </th><th class="D five" id="Dfive"><button class="round target" id="22" onclick="Hit(this.id)"></button> </th><th class="D six" id="Dsix"><button class="round target" id="23" onclick="Hit(this.id)"></button> </th>
+   <tr> <th class="E one"><button class="round target" id="24" onclick="Hit(this.id)"></button> </th><th class="E two" ><button class="round target" id="25" onclick="Hit(this.id)"></button> </th><th class="E three" ><button class="round target" id="26" onclick="Hit(this.id)"></button> </th><th class="E four" id="Efour"><button class="round target" id="27" onclick="Hit(this.id)"></button> </th><th class="E five" id="Efive"><button class="round target" id="28" onclick="Hit(this.id)"></button> </th><th class="E six" id="Esix"><button class="round target" id="29" onclick="Hit(this.id)"></button> </th>
+   <tr> <th class="F one"><button class="round target" id="30" onclick="Hit(this.id)"></button> </th><th class="F two" ><button class="round target" id="31" onclick="Hit(this.id)"></button> </th><th class="F three" ><button class="round target" id="32" onclick="Hit(this.id)"></button> </th><th class="F four" id="Ffour"><button class="round target" id="33" onclick="Hit(this.id)"></button> </th><th class="F five" id="Ffive"><button class="round target" id="34" onclick="Hit(this.id)"></button> </th><th class="F six" id="Fsix"><button class="round target" id="35" onclick="Hit(this.id)"></button> </th>
+</tbody>
+</table>
+</div>
+</div>
+</body>                                                        
+</html>
